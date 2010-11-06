@@ -320,8 +320,6 @@ on_file_connect_activated()
     gtk_combo_box_set_active( GTK_COMBO_BOX( ssl_entry ), 2);
     gtk_table_attach_defaults( GTK_TABLE( table ), ssl_entry, 1, 2, 4, 5 );
 
-    gtk_entry_set_text( GTK_ENTRY( host_entry ), "MCBC_t105" );
-    gtk_entry_set_text( GTK_ENTRY( login_entry ), "postgres" );
     gtk_widget_show_all( table );
 
     if( gtk_dialog_run( GTK_DIALOG( dialog ) ) == GTK_RESPONSE_ACCEPT )
